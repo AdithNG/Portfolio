@@ -34,7 +34,7 @@ function ProgrammingPortfolio() {
         <div className="text">
           <h2>Teaching Assistant – UMBC</h2>
           <p>
-            Mentored over 600 CS students across core subjects including <strong>Data Structures</strong>, <strong>AI</strong>, and <strong>Security</strong>.
+            Mentored over 600 CS students across core subjects including <strong>Python</strong>, <strong>C++</strong>, and <strong>Data Structures</strong>.
             Led review sessions, debugged code, and promoted concept mastery through hands-on learning.
           </p>
         </div>
