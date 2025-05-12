@@ -9,9 +9,7 @@ import hydrosenseImg from '../assets/hydrosense.jpg';
 import traveltrekImg from '../assets/traveltrek.jpg';
 
 function ProgrammingPortfolio() {
-  useEffect(() => {
-    AOS.init({ once: true });
-  }, []);
+
 
   return (
     <div className="portfolio-page">

@@ -1,22 +1,24 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import ProgrammingPortfolio from './pages/ProgrammingPortfolio';
-import GamePortfolio from './pages/GamePortfolio';
-import About from './pages/About';
 import Contact from './components/Contact';
+import DelayedRouteRenderer from './components/DelayedRouteRenderer';
+
+function AppWrapper() {
+  const location = useLocation();
+
+  return (
+    <>
+      <Navbar />
+      <DelayedRouteRenderer location={location} />
+      <Contact />
+    </>
+  );
+}
 
 function App() {
   return (
     <Router basename="/Portfolio">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/programming" element={<ProgrammingPortfolio />} />
-        <Route path="/games" element={<GamePortfolio />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-      <Contact />
+      <AppWrapper />
     </Router>
   );
 }

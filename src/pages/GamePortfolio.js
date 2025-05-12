@@ -7,9 +7,7 @@ import frostyImg from '../assets/frostyfps.jpg';
 import GameDevResume from '../components/GameDevResume';
 
 function GamePortfolio() {
-  useEffect(() => {
-    AOS.init({ once: true });
-  }, []);
+
 
   return (
     <div className="portfolio-page">

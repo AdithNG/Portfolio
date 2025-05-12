@@ -3,9 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function About() {
-  useEffect(() => {
-    AOS.init({ once: true });
-  }, []);
+
 
   return (
     <div className="about-page">
