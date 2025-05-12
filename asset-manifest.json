@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.497f6a78.css",
-    "main.js": "/Portfolio/static/js/main.26d6043b.js",
+    "main.css": "/Portfolio/static/css/main.f4b07c76.css",
+    "main.js": "/Portfolio/static/js/main.d7d18fc9.js",
     "static/js/453.ade82335.chunk.js": "/Portfolio/static/js/453.ade82335.chunk.js",
+    "static/media/cardbattler.jpg": "/Portfolio/static/media/cardbattler.4ae27906183f0967cf86.jpg",
     "static/media/neuroleap.jpg": "/Portfolio/static/media/neuroleap.ef95157ba80c8448d7c1.jpg",
-    "static/media/traveltrek.jpg": "/Portfolio/static/media/traveltrek.c9fbea1e8a6c56d478e8.jpg",
+    "static/media/traveltrek.jpg": "/Portfolio/static/media/traveltrek.71e199757d9bc06a37ad.jpg",
     "static/media/Adith.jpg": "/Portfolio/static/media/Adith.ec8045e83e0306f66c8e.jpg",
     "static/media/hydrosense.jpg": "/Portfolio/static/media/hydrosense.c9559f33045f03325a91.jpg",
     "static/media/umbc.jpg": "/Portfolio/static/media/umbc.f04d92d0bfd7d08649d1.jpg",
+    "static/media/waitingdoor.jpg": "/Portfolio/static/media/waitingdoor.6d6915a41bbce6b83572.jpg",
+    "static/media/frostyfps.jpg": "/Portfolio/static/media/frostyfps.8c264b0d74452179c515.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.497f6a78.css.map": "/Portfolio/static/css/main.497f6a78.css.map",
-    "main.26d6043b.js.map": "/Portfolio/static/js/main.26d6043b.js.map",
+    "main.f4b07c76.css.map": "/Portfolio/static/css/main.f4b07c76.css.map",
+    "main.d7d18fc9.js.map": "/Portfolio/static/js/main.d7d18fc9.js.map",
     "453.ade82335.chunk.js.map": "/Portfolio/static/js/453.ade82335.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.497f6a78.css",
-    "static/js/main.26d6043b.js"
+    "static/css/main.f4b07c76.css",
+    "static/js/main.d7d18fc9.js"
   ]
 }
