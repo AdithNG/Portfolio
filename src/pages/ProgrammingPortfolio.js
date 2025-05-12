@@ -69,7 +69,7 @@ function ProgrammingPortfolio() {
       <div className="resume-block" data-aos="fade-up">
         <h2>Resume for Software Engineering Roles</h2>
         <iframe
-          src="/resume_programming.pdf"
+          src={`${process.env.PUBLIC_URL}/resume_programming.pdf`}
           title="Programming Resume"
           width="100%"
           height="600px"
