@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.f4b07c76.css",
-    "main.js": "/Portfolio/static/js/main.d7d18fc9.js",
+    "main.css": "/Portfolio/static/css/main.992a5f72.css",
+    "main.js": "/Portfolio/static/js/main.3b868d9e.js",
     "static/js/453.ade82335.chunk.js": "/Portfolio/static/js/453.ade82335.chunk.js",
     "static/media/cardbattler.jpg": "/Portfolio/static/media/cardbattler.4ae27906183f0967cf86.jpg",
     "static/media/neuroleap.jpg": "/Portfolio/static/media/neuroleap.ef95157ba80c8448d7c1.jpg",
@@ -12,12 +12,12 @@
     "static/media/waitingdoor.jpg": "/Portfolio/static/media/waitingdoor.6d6915a41bbce6b83572.jpg",
     "static/media/frostyfps.jpg": "/Portfolio/static/media/frostyfps.8c264b0d74452179c515.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.f4b07c76.css.map": "/Portfolio/static/css/main.f4b07c76.css.map",
-    "main.d7d18fc9.js.map": "/Portfolio/static/js/main.d7d18fc9.js.map",
+    "main.992a5f72.css.map": "/Portfolio/static/css/main.992a5f72.css.map",
+    "main.3b868d9e.js.map": "/Portfolio/static/js/main.3b868d9e.js.map",
     "453.ade82335.chunk.js.map": "/Portfolio/static/js/453.ade82335.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4b07c76.css",
-    "static/js/main.d7d18fc9.js"
+    "static/css/main.992a5f72.css",
+    "static/js/main.3b868d9e.js"
   ]
 }
