@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.992a5f72.css",
-    "main.js": "/Portfolio/static/js/main.b8a74cf3.js",
+    "main.js": "/Portfolio/static/js/main.1ad13bb3.js",
     "static/js/453.ade82335.chunk.js": "/Portfolio/static/js/453.ade82335.chunk.js",
+    "static/media/neuroleap.jpg": "/Portfolio/static/media/neuroleap.93555631eeb30f1e7dcd.jpg",
     "static/media/cardbattler.jpg": "/Portfolio/static/media/cardbattler.4ae27906183f0967cf86.jpg",
-    "static/media/neuroleap.jpg": "/Portfolio/static/media/neuroleap.ef95157ba80c8448d7c1.jpg",
     "static/media/traveltrek.jpg": "/Portfolio/static/media/traveltrek.71e199757d9bc06a37ad.jpg",
     "static/media/Adith.jpg": "/Portfolio/static/media/Adith.ec8045e83e0306f66c8e.jpg",
     "static/media/hydrosense.jpg": "/Portfolio/static/media/hydrosense.c9559f33045f03325a91.jpg",
@@ -13,11 +13,11 @@
     "static/media/frostyfps.jpg": "/Portfolio/static/media/frostyfps.8c264b0d74452179c515.jpg",
     "index.html": "/Portfolio/index.html",
     "main.992a5f72.css.map": "/Portfolio/static/css/main.992a5f72.css.map",
-    "main.b8a74cf3.js.map": "/Portfolio/static/js/main.b8a74cf3.js.map",
+    "main.1ad13bb3.js.map": "/Portfolio/static/js/main.1ad13bb3.js.map",
     "453.ade82335.chunk.js.map": "/Portfolio/static/js/453.ade82335.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.992a5f72.css",
-    "static/js/main.b8a74cf3.js"
+    "static/js/main.1ad13bb3.js"
   ]
 }
