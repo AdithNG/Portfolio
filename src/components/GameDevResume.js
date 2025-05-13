@@ -4,7 +4,7 @@ import 'aos/dist/aos.css';
 
 function GameDevResume() {
   useEffect(() => {
-    AOS.init({ once: true });
+    AOS.init({ once: false });
   }, []);
 
   return (
