@@ -1,15 +1,27 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-// Importing local images from src/assets
+// Importing local images
 import neuroleapImg from '../assets/neuroleap.jpg';
 import umbcImg from '../assets/umbc.jpg';
 import hydrosenseImg from '../assets/hydrosense.jpg';
 import traveltrekImg from '../assets/traveltrek.jpg';
 
 function ProgrammingPortfolio() {
+  useEffect(() => {
+    AOS.init({ once: false });
+  }, []);
 
+  const [expandedImg, setExpandedImg] = useState(null);
+
+  const handleImageClick = (src) => {
+    setExpandedImg(src);
+  };
+
+  const closeModal = () => {
+    setExpandedImg(null);
+  };
 
   return (
     <div className="portfolio-page">
@@ -17,7 +29,12 @@ function ProgrammingPortfolio() {
 
       {/* NeuroLeap Internship */}
       <div className="entry entry-left" data-aos="fade-right">
-        <img src={neuroleapImg} alt="NeuroLeap Dashboard" />
+        <img
+          src={neuroleapImg}
+          alt="NeuroLeap Dashboard"
+          className="entry-image"
+          onClick={() => handleImageClick(neuroleapImg)}
+        />
         <div className="text">
           <h2>Software Engineer Intern – NeuroLeap Corp</h2>
           <p>
@@ -36,12 +53,22 @@ function ProgrammingPortfolio() {
             Led review sessions, debugged code, and promoted concept mastery through hands-on learning.
           </p>
         </div>
-        <img src={umbcImg} alt="UMBC Teaching" />
+        <img
+          src={umbcImg}
+          alt="UMBC Teaching"
+          className="entry-image"
+          onClick={() => handleImageClick(umbcImg)}
+        />
       </div>
 
       {/* HydroSense Project */}
       <div className="entry entry-left" data-aos="fade-right">
-        <img src={hydrosenseImg} alt="HydroSense Project" />
+        <img
+          src={hydrosenseImg}
+          alt="HydroSense Project"
+          className="entry-image"
+          onClick={() => handleImageClick(hydrosenseImg)}
+        />
         <div className="text">
           <h2>HydroSense – AI-Powered Hydroponics Monitor</h2>
           <p>
@@ -60,7 +87,12 @@ function ProgrammingPortfolio() {
             Improved trip planning efficiency by 20%.
           </p>
         </div>
-        <img src={traveltrekImg} alt="TravelTrek Chatbot" />
+        <img
+          src={traveltrekImg}
+          alt="TravelTrek Chatbot"
+          className="entry-image"
+          onClick={() => handleImageClick(traveltrekImg)}
+        />
       </div>
 
       {/* Resume Embed */}
@@ -74,6 +106,13 @@ function ProgrammingPortfolio() {
           style={{ border: '2px solid #444', borderRadius: '8px', marginTop: '1rem' }}
         />
       </div>
+
+      {/* Shared Modal for image expansion */}
+      {expandedImg && (
+        <div className="modal" onClick={closeModal}>
+          <img src={expandedImg} alt="Expanded View" className="modal-image" />
+        </div>
+      )}
     </div>
   );
 }
