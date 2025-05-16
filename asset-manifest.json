@@ -1,8 +1,12 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.992a5f72.css",
-    "main.js": "/Portfolio/static/js/main.1ad13bb3.js",
+    "main.css": "/Portfolio/static/css/main.abac839e.css",
+    "main.js": "/Portfolio/static/js/main.0aefcfb6.js",
     "static/js/453.ade82335.chunk.js": "/Portfolio/static/js/453.ade82335.chunk.js",
+    "static/media/waiting2.png": "/Portfolio/static/media/waiting2.50b10a249264f9f98e2f.png",
+    "static/media/waiting1.png": "/Portfolio/static/media/waiting1.d7545c03c25660ec3b6c.png",
+    "static/media/waiting4.png": "/Portfolio/static/media/waiting4.eb2424d429f2a1bbd54e.png",
+    "static/media/waiting3.png": "/Portfolio/static/media/waiting3.7484fef24325b9d06b91.png",
     "static/media/neuroleap.jpg": "/Portfolio/static/media/neuroleap.93555631eeb30f1e7dcd.jpg",
     "static/media/cardbattler.jpg": "/Portfolio/static/media/cardbattler.4ae27906183f0967cf86.jpg",
     "static/media/traveltrek.jpg": "/Portfolio/static/media/traveltrek.71e199757d9bc06a37ad.jpg",
@@ -12,12 +16,12 @@
     "static/media/waitingdoor.jpg": "/Portfolio/static/media/waitingdoor.6d6915a41bbce6b83572.jpg",
     "static/media/frostyfps.jpg": "/Portfolio/static/media/frostyfps.8c264b0d74452179c515.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.992a5f72.css.map": "/Portfolio/static/css/main.992a5f72.css.map",
-    "main.1ad13bb3.js.map": "/Portfolio/static/js/main.1ad13bb3.js.map",
+    "main.abac839e.css.map": "/Portfolio/static/css/main.abac839e.css.map",
+    "main.0aefcfb6.js.map": "/Portfolio/static/js/main.0aefcfb6.js.map",
     "453.ade82335.chunk.js.map": "/Portfolio/static/js/453.ade82335.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.992a5f72.css",
-    "static/js/main.1ad13bb3.js"
+    "static/css/main.abac839e.css",
+    "static/js/main.0aefcfb6.js"
   ]
 }
