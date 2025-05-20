@@ -1,4 +1,4 @@
-# 🎮 Adith Gunaseelan – Developer Portfolio
+# 💻 Adith Gunaseelan – Developer Portfolio
 
 Welcome to my personal portfolio site! This is a responsive and animated React-based web app that showcases my work in **software engineering**, **game development**, and **interactive design**.
 
