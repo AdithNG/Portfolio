@@ -23,6 +23,8 @@ function ProgrammingPortfolio() {
     setExpandedImg(null);
   };
 
+  const resumeUrl = `${process.env.PUBLIC_URL}/Adith_Gunaseelan_Resume.pdf?v=${new Date().getTime()}`;
+
   return (
     <div className="portfolio-page">
       <h1 data-aos="fade-up">Programming Projects & Experience</h1>
@@ -99,7 +101,7 @@ function ProgrammingPortfolio() {
       <div className="resume-block" data-aos="fade-up">
         <h2>Resume for Software Engineering Roles</h2>
         <iframe
-          src={`${process.env.PUBLIC_URL}/Adith_Gunaseelan_Resume.pdf`}
+          src={resumeUrl}
           title="Programming Resume"
           width="100%"
           height="900px"
