@@ -11,7 +11,7 @@ function About() {
 
       <section data-aos="fade-up" data-aos-delay="100">
         <p>
-          I'm a Computer Science student intending to pursue my Master's at the University of Southern California, with a background from UMBC. 
+          I'm a Computer Science student pursuing my Master's at the University of Southern California, with a background from UMBC. 
           I love building software systems that are both functional and expressive, especially at the intersection of programming and interactive media.
         </p>
       </section>
