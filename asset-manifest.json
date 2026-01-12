@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.abac839e.css",
-    "main.js": "/Portfolio/static/js/main.3a524b3a.js",
+    "main.css": "/Portfolio/static/css/main.bdd095ee.css",
+    "main.js": "/Portfolio/static/js/main.8e4cc832.js",
     "static/js/453.ade82335.chunk.js": "/Portfolio/static/js/453.ade82335.chunk.js",
     "static/media/waiting2.png": "/Portfolio/static/media/waiting2.50b10a249264f9f98e2f.png",
     "static/media/waiting1.png": "/Portfolio/static/media/waiting1.d7545c03c25660ec3b6c.png",
@@ -12,16 +12,17 @@
     "static/media/traveltrek.jpg": "/Portfolio/static/media/traveltrek.71e199757d9bc06a37ad.jpg",
     "static/media/Adith.jpg": "/Portfolio/static/media/Adith.ec8045e83e0306f66c8e.jpg",
     "static/media/hydrosense.jpg": "/Portfolio/static/media/hydrosense.c9559f33045f03325a91.jpg",
+    "static/media/harmonianet.jpg": "/Portfolio/static/media/harmonianet.2dfffd5d2c0e111acc69.jpg",
     "static/media/umbc.jpg": "/Portfolio/static/media/umbc.f04d92d0bfd7d08649d1.jpg",
     "static/media/waitingdoor.jpg": "/Portfolio/static/media/waitingdoor.6d6915a41bbce6b83572.jpg",
     "static/media/frostyfps.jpg": "/Portfolio/static/media/frostyfps.8c264b0d74452179c515.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.abac839e.css.map": "/Portfolio/static/css/main.abac839e.css.map",
-    "main.3a524b3a.js.map": "/Portfolio/static/js/main.3a524b3a.js.map",
+    "main.bdd095ee.css.map": "/Portfolio/static/css/main.bdd095ee.css.map",
+    "main.8e4cc832.js.map": "/Portfolio/static/js/main.8e4cc832.js.map",
     "453.ade82335.chunk.js.map": "/Portfolio/static/js/453.ade82335.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.abac839e.css",
-    "static/js/main.3a524b3a.js"
+    "static/css/main.bdd095ee.css",
+    "static/js/main.8e4cc832.js"
   ]
 }
