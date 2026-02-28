@@ -7,10 +7,13 @@ import neuroleapImg from '../assets/neuroleap.jpg';
 import umbcImg from '../assets/umbc.jpg';
 import hydrosenseImg from '../assets/hydrosense.jpg';
 import traveltrekImg from '../assets/traveltrek.jpg';
+import harmonianetImg from '../assets/harmonianet.jpg';
+import bcsImg from '../assets/bcs.jpg';
+import lastmileImg from '../assets/lastmile.jpg';
 
 function ProgrammingPortfolio() {
   useEffect(() => {
-    AOS.init({ once: false });
+    AOS.init({ once: false, mirror: true });
   }, []);
 
   const [expandedImg, setExpandedImg] = useState(null);
@@ -29,6 +32,25 @@ function ProgrammingPortfolio() {
     <div className="portfolio-page">
       <h1 data-aos="fade-up">Programming Projects & Experience</h1>
 
+      {/* Bitcoin Credit Services Internship */}
+      <div className="entry entry-right" data-aos="fade-left">
+        <div className="text">
+          <h2>Software Engineer Intern – Bitcoin Credit Services</h2>
+          <p>
+            Working on a production microservices platform using <strong>NestJS</strong>, <strong>PostgreSQL</strong>, and <strong>Docker</strong>.
+            Built event driven services with <strong>Kafka</strong>, implemented role based access with <strong>Keycloak</strong>,
+            and contributed to multi tenant card issuing and compliance workflows.
+          </p>
+        </div>
+        <img
+          src={bcsImg}
+          alt="Bitcoin Credit Services Platform"
+          className="entry-image"
+          onClick={() => handleImageClick(bcsImg)}
+        />
+      </div>
+
+
       {/* NeuroLeap Internship */}
       <div className="entry entry-left" data-aos="fade-right">
         <img
@@ -46,8 +68,27 @@ function ProgrammingPortfolio() {
         </div>
       </div>
 
-      {/* Teaching Assistant */}
+      {/* LastMile Project */}
       <div className="entry entry-right" data-aos="fade-left">
+        <div className="text">
+          <h2>LastMile – Real-Time Delivery Route Optimizer</h2>
+          <p>
+            Built a full-stack engine solving the <strong>Capacitated Vehicle Routing Problem with Time Windows (CVRPTW)</strong>.
+            Implemented a greedy + 2-opt solver, async optimization via <strong>Celery + Redis</strong>,
+            live traffic rerouting over <strong>WebSockets</strong>, and an interactive <strong>React/Leaflet</strong> map dashboard.
+            Backend built with <strong>FastAPI</strong> and <strong>PostgreSQL</strong>, containerized with Docker Compose.
+          </p>
+        </div>
+        <img
+          src={lastmileImg}
+          alt="LastMile Route Optimizer"
+          className="entry-image"
+          onClick={() => handleImageClick(lastmileImg)}
+        />
+      </div>
+
+      {/* Teaching Assistant */}
+      <div className="entry entry-right" data-aos="fade-right">
         <div className="text">
           <h2>Teaching Assistant – UMBC</h2>
           <p>
@@ -61,6 +102,24 @@ function ProgrammingPortfolio() {
           className="entry-image"
           onClick={() => handleImageClick(umbcImg)}
         />
+      </div>
+
+      {/* HarmoniaNet Project */}
+      <div className="entry entry-left" data-aos="fade-left">
+        <img
+          src={harmonianetImg}
+          alt="HarmoniaNet Music Genre Classifier"
+          className="entry-image"
+          onClick={() => handleImageClick(harmonianetImg)}
+        />
+        <div className="text">
+          <h2>HarmoniaNet – Music Genre Classification Web App</h2>
+          <p>
+            Built and deployed a full-stack web application where users upload 30 second audio clips for genre prediction.
+            Implemented audio preprocessing, spectrogram generation, and a neural network model using <strong>Python</strong> and <strong>PyTorch</strong>,
+            with a <strong>React</strong> frontend for interactive uploads and results.
+          </p>
+        </div>
       </div>
 
       {/* HydroSense Project */}
