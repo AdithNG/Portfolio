@@ -1,0 +1,41 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="32" fill="#0D1624"/>
+  <rect x="48" y="48" width="1104" height="704" rx="28" fill="url(#bg)"/>
+  <rect x="88" y="112" width="250" height="576" rx="24" fill="#132338" stroke="#21405E"/>
+  <rect x="376" y="112" width="736" height="176" rx="24" fill="#F4EFE4"/>
+  <rect x="376" y="320" width="454" height="368" rx="24" fill="#F4EFE4"/>
+  <rect x="854" y="320" width="258" height="176" rx="24" fill="#F4EFE4"/>
+  <rect x="854" y="512" width="258" height="176" rx="24" fill="#F4EFE4"/>
+  <rect x="118" y="146" width="190" height="44" rx="14" fill="#1C334F"/>
+  <rect x="118" y="212" width="190" height="72" rx="18" fill="#18314B"/>
+  <rect x="118" y="302" width="190" height="72" rx="18" fill="#18314B"/>
+  <rect x="118" y="392" width="190" height="72" rx="18" fill="#18314B"/>
+  <rect x="118" y="482" width="190" height="72" rx="18" fill="#18314B"/>
+  <rect x="118" y="572" width="190" height="72" rx="18" fill="#1F6F78"/>
+  <text x="118" y="90" fill="#77D0C7" font-family="Segoe UI, Arial, sans-serif" font-size="28" letter-spacing="4">OPSPILOT</text>
+  <text x="408" y="176" fill="#132338" font-family="Georgia, Times New Roman, serif" font-size="70" font-weight="700">AI ops copilot</text>
+  <text x="408" y="232" fill="#5A6876" font-family="Segoe UI, Arial, sans-serif" font-size="28">LangGraph workflows, LangChain retrieval, approvals, traces, jobs, and GitHub ingestion.</text>
+  <rect x="408" y="356" width="390" height="68" rx="18" fill="#FCFAF5" stroke="#D8D1C5"/>
+  <rect x="408" y="444" width="390" height="148" rx="18" fill="#FCFAF5" stroke="#D8D1C5"/>
+  <rect x="408" y="614" width="180" height="40" rx="20" fill="#1F9D92"/>
+  <rect x="884" y="356" width="198" height="48" rx="18" fill="#DDEAE5"/>
+  <rect x="884" y="428" width="96" height="96" rx="18" fill="#FCFAF5" stroke="#D8D1C5"/>
+  <rect x="986" y="428" width="96" height="96" rx="18" fill="#FCFAF5" stroke="#D8D1C5"/>
+  <rect x="884" y="548" width="198" height="108" rx="18" fill="#FCFAF5" stroke="#D8D1C5"/>
+  <text x="432" y="400" fill="#132338" font-family="Segoe UI, Arial, sans-serif" font-size="30">What changed in the latest deploy?</text>
+  <text x="432" y="490" fill="#223243" font-family="Segoe UI, Arial, sans-serif" font-size="24">Relevant guidance: rollback, verify health</text>
+  <text x="432" y="526" fill="#223243" font-family="Segoe UI, Arial, sans-serif" font-size="24">checks, draft ticket, and request approval</text>
+  <text x="432" y="562" fill="#223243" font-family="Segoe UI, Arial, sans-serif" font-size="24">before writing to external systems.</text>
+  <text x="452" y="642" fill="#F7FAF8" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="600">Run workflow</text>
+  <text x="906" y="388" fill="#1F6F78" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">GraphQL</text>
+  <text x="912" y="484" fill="#132338" font-family="Georgia, Times New Roman, serif" font-size="36" font-weight="700">14</text>
+  <text x="1009" y="484" fill="#132338" font-family="Georgia, Times New Roman, serif" font-size="36" font-weight="700">4</text>
+  <text x="901" y="626" fill="#132338" font-family="Segoe UI, Arial, sans-serif" font-size="22">Approvals, jobs, evals,</text>
+  <text x="901" y="656" fill="#132338" font-family="Segoe UI, Arial, sans-serif" font-size="22">observability, and traces</text>
+  <defs>
+    <linearGradient id="bg" x1="48" y1="48" x2="1152" y2="752" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E7E2D7"/>
+      <stop offset="1" stop-color="#E2EADF"/>
+    </linearGradient>
+  </defs>
+</svg>

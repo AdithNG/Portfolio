@@ -10,6 +10,7 @@ import traveltrekImg from '../assets/traveltrek.jpg';
 import harmonianetImg from '../assets/harmonianet.jpg';
 import bcsImg from '../assets/bcs.jpg';
 import lastmileImg from '../assets/lastmile.jpg';
+import opspilotImg from '../assets/opspilot.svg';
 
 function ProgrammingPortfolio() {
   useEffect(() => {
@@ -31,6 +32,37 @@ function ProgrammingPortfolio() {
   return (
     <div className="portfolio-page">
       <h1 data-aos="fade-up">Programming Projects & Experience</h1>
+
+      {/* OpsPilot Project */}
+      <div className="entry entry-left" data-aos="fade-right">
+        <img
+          src={opspilotImg}
+          alt="OpsPilot AI Operations Copilot"
+          className="entry-image"
+          onClick={() => handleImageClick(opspilotImg)}
+        />
+        <div className="text">
+          <h2>OpsPilot - AI Engineering Operations Copilot</h2>
+          <p>
+            Built a full-stack internal AI copilot that answers runbook questions, drafts incident summaries and tickets,
+            ingests documents and GitHub artifacts, and routes sensitive actions through approval gates.
+            The backend uses <strong>FastAPI</strong>, <strong>LangGraph</strong>, <strong>LangChain</strong>, <strong>GraphQL</strong>,
+            <strong>PostgreSQL/pgvector</strong>, and <strong>Docker</strong>, with a <strong>Next.js + TypeScript</strong> SPA
+            for operations workflows, traces, jobs, approvals, and observability.
+          </p>
+          <p>
+            Repo:{' '}
+            <a
+              href="https://github.com/AdithNG/OpsPilot"
+              target="_blank"
+              rel="noreferrer"
+              className="project-link"
+            >
+              github.com/AdithNG/OpsPilot
+            </a>
+          </p>
+        </div>
+      </div>
 
       {/* Bitcoin Credit Services Internship */}
       <div className="entry entry-right" data-aos="fade-left">
