@@ -10,7 +10,7 @@ import traveltrekImg from '../assets/traveltrek.jpg';
 import harmonianetImg from '../assets/harmonianet.jpg';
 import bcsImg from '../assets/bcs.jpg';
 import lastmileImg from '../assets/lastmile.jpg';
-import opspilotImg from '../assets/opspilot.svg';
+import opspilotImg from '../assets/opspilot.jpg';
 
 function ProgrammingPortfolio() {
   useEffect(() => {
@@ -46,8 +46,8 @@ function ProgrammingPortfolio() {
           <p>
             Built a full-stack internal AI copilot that answers runbook questions, drafts incident summaries and tickets,
             ingests documents and GitHub artifacts, and routes sensitive actions through approval gates.
-            The backend uses <strong>FastAPI</strong>, <strong>LangGraph</strong>, <strong>LangChain</strong>, <strong>GraphQL</strong>,
-            <strong>PostgreSQL/pgvector</strong>, and <strong>Docker</strong>, with a <strong>Next.js + TypeScript</strong> SPA
+            The backend uses <strong>FastAPI</strong>, <strong>LangGraph</strong>, <strong>LangChain</strong>, <strong>GraphQL</strong>, 
+            <strong> PostgreSQL/pgvector</strong>, and <strong>Docker</strong>, with a <strong>Next.js + TypeScript</strong> SPA
             for operations workflows, traces, jobs, approvals, and observability.
           </p>
           <p>
