@@ -11,6 +11,8 @@ import harmonianetImg from '../assets/harmonianet.jpg';
 import bcsImg from '../assets/bcs.jpg';
 import lastmileImg from '../assets/lastmile.jpg';
 import opspilotImg from '../assets/opspilot.jpg';
+import secondbrainImg from '../assets/secondbrain.jpg';
+import trendbotImg from '../assets/trendbot.jpg';
 
 function ProgrammingPortfolio() {
   useEffect(() => {
@@ -33,8 +35,8 @@ function ProgrammingPortfolio() {
     <div className="portfolio-page">
       <h1 data-aos="fade-up">Programming Projects & Experience</h1>
 
-      {/* OpsPilot Project */}
-      <div className="entry entry-left" data-aos="fade-right">
+      {/* 1 - OpsPilot Project: entry-left, fade-right */}
+      <div className="entry entry-left" data-aos="fade-left">
         <img
           src={opspilotImg}
           alt="OpsPilot AI Operations Copilot"
@@ -46,7 +48,7 @@ function ProgrammingPortfolio() {
           <p>
             Built a full-stack internal AI copilot that answers runbook questions, drafts incident summaries and tickets,
             ingests documents and GitHub artifacts, and routes sensitive actions through approval gates.
-            The backend uses <strong>FastAPI</strong>, <strong>LangGraph</strong>, <strong>LangChain</strong>, <strong>GraphQL</strong>, 
+            The backend uses <strong>FastAPI</strong>, <strong>LangGraph</strong>, <strong>LangChain</strong>, <strong>GraphQL</strong>,
             <strong> PostgreSQL/pgvector</strong>, and <strong>Docker</strong>, with a <strong>Next.js + TypeScript</strong> SPA
             for operations workflows, traces, jobs, approvals, and observability.
           </p>
@@ -64,27 +66,90 @@ function ProgrammingPortfolio() {
         </div>
       </div>
 
-      {/* Bitcoin Credit Services Internship */}
-      <div className="entry entry-right" data-aos="fade-left">
+      {/* 2 - Second Brain Project: entry-right, fade-left */}
+      <div className="entry entry-right" data-aos="fade-right">
+        <img
+          src={secondbrainImg}
+          alt="Second Brain RAG Knowledge System"
+          className="entry-image"
+          onClick={() => handleImageClick(secondbrainImg)}
+        />
         <div className="text">
-          <h2>Software Engineer Intern – Bitcoin Credit Services</h2>
+          <h2>Second Brain - Personal RAG Knowledge System</h2>
           <p>
-            Working on a production microservices platform using <strong>NestJS</strong>, <strong>PostgreSQL</strong>, and <strong>Docker</strong>.
-            Built event driven services with <strong>Kafka</strong>, implemented role based access with <strong>Keycloak</strong>,
-            and contributed to multi tenant card issuing and compliance workflows.
+            Built a personal AI-powered knowledge system that ingests articles, PDFs, docs, and notes,
+            then answers questions using only your saved content with source citations.
+            Implemented a full <strong>RAG pipeline</strong> with <strong>LlamaIndex</strong>, <strong>ChromaDB</strong> for local vector storage,
+            <strong> OpenAI</strong> embeddings, and <strong>Claude</strong> for grounded response synthesis.
+            Backend built with <strong>FastAPI</strong>, frontend with <strong>Next.js + TypeScript</strong>,
+            and 29 unit and integration tests covering the full pipeline.
+          </p>
+          <p>
+            Repo:{' '}
+            <a
+              href="https://github.com/AdithNG/Second-Brain"
+              target="_blank"
+              rel="noreferrer"
+              className="project-link"
+            >
+              github.com/AdithNG/Second-Brain
+            </a>
           </p>
         </div>
+      </div>
+
+      {/* 3 - TrendBot Project: entry-left, fade-right */}
+      <div className="entry entry-left" data-aos="fade-left">
+        <img
+          src={trendbotImg}
+          alt="TrendBot Algorithmic Trading Bot"
+          className="entry-image"
+          onClick={() => handleImageClick(trendbotImg)}
+        />
+        <div className="text">
+          <h2>TrendBot - EMA Momentum Algorithmic Trading Bot</h2>
+          <p>
+            Built a live algorithmic trading bot in <strong>Python</strong> that scans the top 20 S&P 500 stocks and 5 major
+            crypto assets (BTC, ETH, SOL, AVAX, LINK) for <strong>EMA(20/50) momentum crossover</strong> signals with RSI and
+            volume confirmation filters. Executes trades via the <strong>Alpaca Markets API</strong> with ATR-based trailing
+            stops, a daily loss circuit breaker, and full <strong>PDT rule protection</strong> for sub-$25k accounts.
+            Crypto runs 24/7 with no PDT restrictions. Includes a vectorbt backtest engine, 24 automated tests,
+            and a <strong>GitHub Actions</strong> CI pipeline.
+          </p>
+          <p>
+            Repo:{' '}
+            <a
+              href="https://github.com/AdithNG/trendbot"
+              target="_blank"
+              rel="noreferrer"
+              className="project-link"
+            >
+              github.com/AdithNG/trendbot
+            </a>
+          </p>
+        </div>
+      </div>
+
+      {/* 4 - Bitcoin Credit Services: entry-right, fade-left */}
+      <div className="entry entry-right" data-aos="fade-right">
         <img
           src={bcsImg}
           alt="Bitcoin Credit Services Platform"
           className="entry-image"
           onClick={() => handleImageClick(bcsImg)}
         />
+        <div className="text">
+          <h2>Software Engineer Intern - Bitcoin Credit Services</h2>
+          <p>
+            Working on a production microservices platform using <strong>NestJS</strong>, <strong>PostgreSQL</strong>, and <strong>Docker</strong>.
+            Built event driven services with <strong>Kafka</strong>, implemented role based access with <strong>Keycloak</strong>,
+            and contributed to multi tenant card issuing and compliance workflows.
+          </p>
+        </div>
       </div>
 
-
-      {/* NeuroLeap Internship */}
-      <div className="entry entry-left" data-aos="fade-right">
+      {/* 5 - NeuroLeap Internship: entry-left, fade-right */}
+      <div className="entry entry-left" data-aos="fade-left">
         <img
           src={neuroleapImg}
           alt="NeuroLeap Dashboard"
@@ -92,7 +157,7 @@ function ProgrammingPortfolio() {
           onClick={() => handleImageClick(neuroleapImg)}
         />
         <div className="text">
-          <h2>Software Engineer Intern – NeuroLeap Corp</h2>
+          <h2>Software Engineer Intern - NeuroLeap Corp</h2>
           <p>
             Developed full-stack web features using <strong>React</strong> and <strong>Node.js</strong> improving performance by 20%.
             Optimized PostgreSQL queries, built REST APIs, and redesigned UI components for responsiveness and UX improvements.
@@ -100,10 +165,16 @@ function ProgrammingPortfolio() {
         </div>
       </div>
 
-      {/* LastMile Project */}
-      <div className="entry entry-right" data-aos="fade-left">
+      {/* 6 - LastMile Project: entry-right, fade-left */}
+      <div className="entry entry-right" data-aos="fade-right">
+        <img
+          src={lastmileImg}
+          alt="LastMile Route Optimizer"
+          className="entry-image"
+          onClick={() => handleImageClick(lastmileImg)}
+        />
         <div className="text">
-          <h2>LastMile – Real-Time Delivery Route Optimizer</h2>
+          <h2>LastMile - Real-Time Delivery Route Optimizer</h2>
           <p>
             Built a full-stack engine solving the <strong>Capacitated Vehicle Routing Problem with Time Windows (CVRPTW)</strong>.
             Implemented a greedy + 2-opt solver, async optimization via <strong>Celery + Redis</strong>,
@@ -111,33 +182,27 @@ function ProgrammingPortfolio() {
             Backend built with <strong>FastAPI</strong> and <strong>PostgreSQL</strong>, containerized with Docker Compose.
           </p>
         </div>
-        <img
-          src={lastmileImg}
-          alt="LastMile Route Optimizer"
-          className="entry-image"
-          onClick={() => handleImageClick(lastmileImg)}
-        />
       </div>
 
-      {/* Teaching Assistant */}
-      <div className="entry entry-right" data-aos="fade-right">
-        <div className="text">
-          <h2>Teaching Assistant – UMBC</h2>
-          <p>
-            Mentored over 600 CS students across core subjects including <strong>Python</strong>, <strong>C++</strong>, and <strong>Data Structures</strong>.
-            Led review sessions, debugged code, and promoted concept mastery through hands-on learning.
-          </p>
-        </div>
+      {/* 7 - Teaching Assistant: entry-left, fade-right */}
+      <div className="entry entry-left" data-aos="fade-left">
         <img
           src={umbcImg}
           alt="UMBC Teaching"
           className="entry-image"
           onClick={() => handleImageClick(umbcImg)}
         />
+        <div className="text">
+          <h2>Teaching Assistant - UMBC</h2>
+          <p>
+            Mentored over 600 CS students across core subjects including <strong>Python</strong>, <strong>C++</strong>, and <strong>Data Structures</strong>.
+            Led review sessions, debugged code, and promoted concept mastery through hands-on learning.
+          </p>
+        </div>
       </div>
 
-      {/* HarmoniaNet Project */}
-      <div className="entry entry-left" data-aos="fade-left">
+      {/* 8 - HarmoniaNet Project: entry-right, fade-left */}
+      <div className="entry entry-right" data-aos="fade-right">
         <img
           src={harmonianetImg}
           alt="HarmoniaNet Music Genre Classifier"
@@ -145,7 +210,7 @@ function ProgrammingPortfolio() {
           onClick={() => handleImageClick(harmonianetImg)}
         />
         <div className="text">
-          <h2>HarmoniaNet – Music Genre Classification Web App</h2>
+          <h2>HarmoniaNet - Music Genre Classification Web App</h2>
           <p>
             Built and deployed a full-stack web application where users upload 30 second audio clips for genre prediction.
             Implemented audio preprocessing, spectrogram generation, and a neural network model using <strong>Python</strong> and <strong>PyTorch</strong>,
@@ -154,8 +219,8 @@ function ProgrammingPortfolio() {
         </div>
       </div>
 
-      {/* HydroSense Project */}
-      <div className="entry entry-left" data-aos="fade-right">
+      {/* 9 - HydroSense Project: entry-left, fade-right */}
+      <div className="entry entry-left" data-aos="fade-left">
         <img
           src={hydrosenseImg}
           alt="HydroSense Project"
@@ -163,29 +228,29 @@ function ProgrammingPortfolio() {
           onClick={() => handleImageClick(hydrosenseImg)}
         />
         <div className="text">
-          <h2>HydroSense – AI-Powered Hydroponics Monitor</h2>
+          <h2>HydroSense - AI-Powered Hydroponics Monitor</h2>
           <p>
-            Built a real-time plant health dashboard using <strong>React</strong> and <strong>Firebase</strong>. Integrated ML predictions, Twilio/SendGrid alerts, and environmental data visualization. 
+            Built a real-time plant health dashboard using <strong>React</strong> and <strong>Firebase</strong>. Integrated ML predictions, Twilio/SendGrid alerts, and environmental data visualization.
             Helped reduce water usage by 15% through proactive insights.
           </p>
         </div>
       </div>
 
-      {/* TravelTrek Project */}
-      <div className="entry entry-right" data-aos="fade-left">
-        <div className="text">
-          <h2>TravelTrek – AI Travel Recommender</h2>
-          <p>
-            Led development of a GPT-4 powered chatbot that offers dynamic tourist suggestions. Built with <strong>Firebase</strong> auth and secure key management.
-            Improved trip planning efficiency by 20%.
-          </p>
-        </div>
+      {/* 10 - TravelTrek Project: entry-right, fade-left */}
+      <div className="entry entry-right" data-aos="fade-right">
         <img
           src={traveltrekImg}
           alt="TravelTrek Chatbot"
           className="entry-image"
           onClick={() => handleImageClick(traveltrekImg)}
         />
+        <div className="text">
+          <h2>TravelTrek - AI Travel Recommender</h2>
+          <p>
+            Led development of a GPT-4 powered chatbot that offers dynamic tourist suggestions. Built with <strong>Firebase</strong> auth and secure key management.
+            Improved trip planning efficiency by 20%.
+          </p>
+        </div>
       </div>
 
       {/* Resume Embed */}

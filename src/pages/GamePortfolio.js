@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import doorImg from '../assets/waitingdoor.jpg'; 
+import doorImg from '../assets/waitingdoor.jpg';
 import door1 from '../assets/waiting1.png';
 import door2 from '../assets/waiting2.png';
 import door3 from '../assets/waiting3.png';
@@ -39,8 +39,8 @@ function GamePortfolio() {
     <div className="portfolio-page">
       <h1 data-aos="fade-up">Game Development Projects</h1>
 
-      {/* Waiting At The Door */}
-      <div className="entry entry-left" data-aos="fade-right">
+      {/* 1 - Waiting At The Door: entry-left, image left, slides in from right */}
+      <div className="entry entry-left" data-aos="fade-left">
         <div className="carousel-wrapper">
           <img
             src={doorImages[currentDoorIndex]}
@@ -80,8 +80,14 @@ function GamePortfolio() {
         </div>
       </div>
 
-      {/* Card Battler */}
-      <div className="entry entry-right" data-aos="fade-left">
+      {/* 2 - Card Battler: entry-right, image right, slides in from left */}
+      <div className="entry entry-right" data-aos="fade-right">
+        <img
+          src={cardImg}
+          alt="Card Battler Game"
+          className="entry-image"
+          onClick={() => handleImageClick(cardImg)}
+        />
         <div className="text">
           <h2>Turn-Based Card Battler</h2>
           <p>
@@ -95,16 +101,10 @@ function GamePortfolio() {
             </a>
           </p>
         </div>
-        <img
-          src={cardImg}
-          alt="Card Battler Game"
-          className="entry-image"
-          onClick={() => handleImageClick(cardImg)}
-        />
       </div>
 
-      {/* FrostyFPS */}
-      <div className="entry entry-left" data-aos="fade-right">
+      {/* 3 - FrostyFPS: entry-left, image left, slides in from right */}
+      <div className="entry entry-left" data-aos="fade-left">
         <img
           src={frostyImg}
           alt="FrostyFPS Gameplay"
