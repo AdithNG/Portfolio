@@ -18,6 +18,7 @@ function GamePortfolio() {
   const doorImages = [doorImg, door1, door2, door3, door4];
   const [currentDoorIndex, setCurrentDoorIndex] = useState(0);
   const [expandedImg, setExpandedImg] = useState(null);
+  const [expandedDoorIndex, setExpandedDoorIndex] = useState(null);
 
   const handlePrev = () => {
     setCurrentDoorIndex((prev) => (prev - 1 + doorImages.length) % doorImages.length);
@@ -29,10 +30,35 @@ function GamePortfolio() {
 
   const handleImageClick = (src) => {
     setExpandedImg(src);
+    setExpandedDoorIndex(null);
   };
 
   const closeModal = () => {
     setExpandedImg(null);
+    setExpandedDoorIndex(null);
+  };
+
+  const openDoorInModal = (index) => {
+    setExpandedDoorIndex(index);
+    setExpandedImg(doorImages[index]);
+  };
+
+  const handleModalPrev = (event) => {
+    event.stopPropagation();
+    if (expandedDoorIndex === null) return;
+
+    const nextIndex = (expandedDoorIndex - 1 + doorImages.length) % doorImages.length;
+    setExpandedDoorIndex(nextIndex);
+    setExpandedImg(doorImages[nextIndex]);
+  };
+
+  const handleModalNext = (event) => {
+    event.stopPropagation();
+    if (expandedDoorIndex === null) return;
+
+    const nextIndex = (expandedDoorIndex + 1) % doorImages.length;
+    setExpandedDoorIndex(nextIndex);
+    setExpandedImg(doorImages[nextIndex]);
   };
 
   return (
@@ -46,7 +72,7 @@ function GamePortfolio() {
             src={doorImages[currentDoorIndex]}
             alt={`Waiting At The Door ${currentDoorIndex + 1}`}
             className="entry-image"
-            onClick={() => handleImageClick(doorImages[currentDoorIndex])}
+            onClick={() => openDoorInModal(currentDoorIndex)}
           />
           <div className="carousel-controls">
             <button onClick={handlePrev}>&larr;</button>
@@ -131,7 +157,19 @@ function GamePortfolio() {
       {/* Shared Modal */}
       {expandedImg && (
         <div className="modal" onClick={closeModal}>
-          <img src={expandedImg} alt="Expanded" className="modal-image" />
+          <div className="modal-content" onClick={(event) => event.stopPropagation()}>
+            {expandedDoorIndex !== null && (
+              <button className="modal-nav" onClick={handleModalPrev} aria-label="Previous image">
+                &larr;
+              </button>
+            )}
+            <img src={expandedImg} alt="Expanded" className="modal-image" />
+            {expandedDoorIndex !== null && (
+              <button className="modal-nav" onClick={handleModalNext} aria-label="Next image">
+                &rarr;
+              </button>
+            )}
+          </div>
         </div>
       )}
     </div>
