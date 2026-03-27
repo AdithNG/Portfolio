@@ -1,15 +1,22 @@
 function Contact() {
   return (
-    <div className="contact-section">
-      <h2>Contact Me</h2>
-      <p>You can reach me at <a href="mailto:adithnishanth@gmail.com">adithnishanth@gmail.com</a></p>
+    <footer className="contact-section">
+      <h2>Let&apos;s Build Something Great</h2>
       <p>
-        LinkedIn: <a href="https://www.linkedin.com/in/adithgunaseelan" target="_blank" rel="noreferrer">linkedin.com/in/adithgunaseelan</a>
+        Open to software engineering roles and collaborative product projects.
       </p>
-      <p>
-        GitHub: <a href="https://github.com/AdithNG" target="_blank" rel="noreferrer">github.com/AdithNG</a>
-      </p>
-    </div>
+
+      <div className="contact-links">
+        <a href="mailto:adithnishanth@gmail.com">adithnishanth@gmail.com</a>
+        <a href="https://www.linkedin.com/in/adithgunaseelan" target="_blank" rel="noreferrer">
+          linkedin.com/in/adithgunaseelan
+        </a>
+        <a href="https://github.com/AdithNG" target="_blank" rel="noreferrer">
+          github.com/AdithNG
+        </a>
+      </div>
+    </footer>
   );
 }
+
 export default Contact;
