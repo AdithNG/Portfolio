@@ -157,19 +157,13 @@ function GamePortfolio() {
       {/* Shared Modal */}
       {expandedImg && (
         <div className="modal" onClick={closeModal}>
-          <div className="modal-content" onClick={(event) => event.stopPropagation()}>
-            {expandedDoorIndex !== null && (
-              <button className="modal-nav" onClick={handleModalPrev} aria-label="Previous image">
-                &larr;
-              </button>
-            )}
-            <img src={expandedImg} alt="Expanded" className="modal-image" />
-            {expandedDoorIndex !== null && (
-              <button className="modal-nav" onClick={handleModalNext} aria-label="Next image">
-                &rarr;
-              </button>
-            )}
-          </div>
+          {expandedDoorIndex !== null && (
+            <>
+              <button className="modal-nav modal-nav-left" onClick={handleModalPrev}>&larr;</button>
+              <button className="modal-nav modal-nav-right" onClick={handleModalNext}>&rarr;</button>
+            </>
+          )}
+          <img src={expandedImg} alt="Expanded" className="modal-image" />
         </div>
       )}
     </div>

@@ -230,12 +230,12 @@ function ProgrammingPortfolio() {
           <p>
             Repo:{' '}
             <a
-              href="https://github.com/AdithNG/harmonia-net"
+              href="https://github.com/AdithNG/HarmoniaNet"
               target="_blank"
               rel="noreferrer"
               className="project-link"
             >
-              github.com/AdithNG/harmonia-net
+              github.com/AdithNG/HarmoniaNet
             </a>
           </p>
         </div>
@@ -258,12 +258,12 @@ function ProgrammingPortfolio() {
           <p>
             Repo:{' '}
             <a
-              href="https://github.com/AdithNG/Hydroponic-Monitoring-System"
+              href="https://github.com/AdithNG/HydroSense"
               target="_blank"
               rel="noreferrer"
               className="project-link"
             >
-              github.com/AdithNG/Hydroponic-Monitoring-System
+              github.com/AdithNG/HydroSense
             </a>
           </p>
         </div>

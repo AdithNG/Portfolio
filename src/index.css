@@ -248,7 +248,7 @@ body::before {
   border: none;
   width: 36px;
   height: 36px;
-  border-radius: 50%;
+border-radius: 50%; 
   color: #fff;
   font-size: 1.1rem;
   cursor: pointer;
@@ -287,42 +287,22 @@ body::before {
   inset: 0;
   background: rgba(5, 8, 15, 0.86);
   backdrop-filter: blur(4px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
   padding: 1rem;
   z-index: 1200;
   cursor: pointer;
-}
-
-.modal-content {
-  display: flex;
-  align-items: center;
-  gap: 0.9rem;
-  width: min(1120px, 100%);
-  justify-content: center;
+  background: linear-gradient(120deg, rgba(79, 102, 202, 0.95), rgba(123, 79, 207, 0.95));
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+  z-index: 2;
 }
 
 .modal-image {
-  max-width: min(1000px, 85vw);
+  max-width: min(1000px, 95vw);
   max-height: 88vh;
   border-radius: 14px;
   box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6);
   animation: zoomIn 240ms ease-out;
-}
-
-.modal-nav {
-  width: 52px;
-  height: 52px;
-  border: none;
-  border-radius: 50%;
-  font-size: 1.55rem;
-  font-weight: 700;
-  color: #ffffff;
-  cursor: pointer;
-  background: linear-gradient(120deg, rgba(79, 102, 202, 0.95), rgba(123, 79, 207, 0.95));
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
-  flex: 0 0 auto;
 }
 
 @keyframes zoomIn {
@@ -346,16 +326,6 @@ body::before {
   .about-page {
     width: min(100%, calc(100% - 1.2rem));
     padding: 1rem;
-  }
-
-  .modal-content {
-    gap: 0.55rem;
-  }
-
-  .modal-nav {
-    width: 44px;
-    height: 44px;
-    font-size: 1.3rem;
   }
 }
 
