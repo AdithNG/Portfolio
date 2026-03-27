@@ -216,6 +216,17 @@ function ProgrammingPortfolio() {
             Implemented audio preprocessing, spectrogram generation, and a neural network model using <strong>Python</strong> and <strong>PyTorch</strong>,
             with a <strong>React</strong> frontend for interactive uploads and results.
           </p>
+          <p>
+            Repo:{' '}
+            <a
+              href="https://github.com/AdithNG/HarmoniaNet"
+              target="_blank"
+              rel="noreferrer"
+              className="project-link"
+            >
+              github.com/AdithNG/HarmoniaNet
+            </a>
+          </p>
         </div>
       </div>
 
@@ -233,6 +244,17 @@ function ProgrammingPortfolio() {
             Built a real-time plant health dashboard using <strong>React</strong> and <strong>Firebase</strong>. Integrated ML predictions, Twilio/SendGrid alerts, and environmental data visualization.
             Helped reduce water usage by 15% through proactive insights.
           </p>
+          <p>
+            Repo:{' '}
+            <a
+              href="https://github.com/AdithNG/HydroSense"
+              target="_blank"
+              rel="noreferrer"
+              className="project-link"
+            >
+              github.com/AdithNG/HydroSense
+            </a>
+          </p>
         </div>
       </div>
 
@@ -249,6 +271,17 @@ function ProgrammingPortfolio() {
           <p>
             Led development of a GPT-4 powered chatbot that offers dynamic tourist suggestions. Built with <strong>Firebase</strong> auth and secure key management.
             Improved trip planning efficiency by 20%.
+          </p>
+          <p>
+            Repo:{' '}
+            <a
+              href="https://github.com/AdithNG/TravelTrek"
+              target="_blank"
+              rel="noreferrer"
+              className="project-link"
+            >
+              github.com/AdithNG/TravelTrek
+            </a>
           </p>
         </div>
       </div>
