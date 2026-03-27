@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React, { useState } from 'react';
 import doorImg from '../assets/waitingdoor.jpg';
 import door1 from '../assets/waiting1.png';
 import door2 from '../assets/waiting2.png';
@@ -11,10 +9,6 @@ import frostyImg from '../assets/frostyfps.jpg';
 import GameDevResume from '../components/GameDevResume';
 
 function GamePortfolio() {
-  useEffect(() => {
-    AOS.init({ once: false });
-  }, []);
-
   const doorImages = [doorImg, door1, door2, door3, door4];
   const [currentDoorIndex, setCurrentDoorIndex] = useState(0);
   const [expandedImg, setExpandedImg] = useState(null);

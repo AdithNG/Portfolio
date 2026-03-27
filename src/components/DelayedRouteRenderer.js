@@ -10,14 +10,18 @@ function DelayedRouteRenderer({ location }) {
   const [renderLocation, setRenderLocation] = useState(location);
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      setRenderLocation(location); // switch route
-      window.scrollTo(0, 0);        // then reset scroll
-      AOS.refreshHard();           // then re-init animations
-    }, 100); // small delay still applies
-
-    return () => clearTimeout(timeout);
+    setRenderLocation(location);
   }, [location]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    const frame = window.requestAnimationFrame(() => {
+      AOS.refreshHard();
+    });
+
+    return () => window.cancelAnimationFrame(frame);
+  }, [renderLocation]);
 
   return (
     <Routes location={renderLocation}>

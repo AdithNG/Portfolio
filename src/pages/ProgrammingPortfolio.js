@@ -1,6 +1,4 @@
-import { useEffect, useState } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { useState } from 'react';
 
 // Importing local images
 import neuroleapImg from '../assets/neuroleap.jpg';
@@ -15,10 +13,6 @@ import secondbrainImg from '../assets/secondbrain.jpg';
 import trendbotImg from '../assets/trendbot.jpg';
 
 function ProgrammingPortfolio() {
-  useEffect(() => {
-    AOS.init({ once: false, mirror: true });
-  }, []);
-
   const [expandedImg, setExpandedImg] = useState(null);
 
   const handleImageClick = (src) => {
