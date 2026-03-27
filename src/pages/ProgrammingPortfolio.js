@@ -181,6 +181,17 @@ function ProgrammingPortfolio() {
             live traffic rerouting over <strong>WebSockets</strong>, and an interactive <strong>React/Leaflet</strong> map dashboard.
             Backend built with <strong>FastAPI</strong> and <strong>PostgreSQL</strong>, containerized with Docker Compose.
           </p>
+          <p>
+            Repo:{' '}
+            <a
+              href="https://github.com/AdithNG/LastMile"
+              target="_blank"
+              rel="noreferrer"
+              className="project-link"
+            >
+              github.com/AdithNG/LastMile
+            </a>
+          </p>
         </div>
       </div>
 

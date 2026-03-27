@@ -248,7 +248,7 @@ body::before {
   border: none;
   width: 36px;
   height: 36px;
-  border-radius: 50%;
+border-radius: 50%; 
   color: #fff;
   font-size: 1.1rem;
   cursor: pointer;
