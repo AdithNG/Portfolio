@@ -292,6 +292,9 @@ body::before {
   padding: 1rem;
   z-index: 1200;
   cursor: pointer;
+  background: linear-gradient(120deg, rgba(79, 102, 202, 0.95), rgba(123, 79, 207, 0.95));
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+  z-index: 2;
 }
 
 .modal-image {
