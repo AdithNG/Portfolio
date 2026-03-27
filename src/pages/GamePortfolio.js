@@ -163,7 +163,12 @@ function GamePortfolio() {
               <button className="modal-nav modal-nav-right" onClick={handleModalNext}>&rarr;</button>
             </>
           )}
-          <img src={expandedImg} alt="Expanded" className="modal-image" />
+          <img
+            src={expandedImg}
+            alt="Expanded"
+            className="modal-image"
+            onClick={(event) => event.stopPropagation()}
+          />
         </div>
       )}
     </div>
