@@ -21,6 +21,7 @@ body {
     radial-gradient(circle at 90% 0%, rgba(159, 122, 255, 0.18), transparent 38%),
     linear-gradient(180deg, #060911 0%, #070b14 45%, #05070f 100%);
   font-family: Inter, 'Segoe UI', Roboto, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body::before {
@@ -45,6 +46,7 @@ body::before {
   background: linear-gradient(145deg, rgba(10, 16, 30, 0.8), rgba(8, 12, 22, 0.65));
   border: 1px solid rgba(123, 164, 255, 0.2);
   box-shadow: var(--glow);
+  animation: pageEntrance 420ms ease-out both;
 }
 
 .home-content {
@@ -173,6 +175,17 @@ body::before {
   border-radius: 18px;
   background: linear-gradient(130deg, rgba(12, 18, 32, 0.9), rgba(10, 16, 28, 0.7));
   border: 1px solid rgba(148, 172, 255, 0.18);
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.entry:hover,
+.resume-block:hover,
+.resume-section:hover,
+.about-page section:hover,
+.contact-section:hover {
+  transform: translateY(-3px);
+  border-color: rgba(148, 172, 255, 0.32);
+  box-shadow: 0 20px 45px rgba(8, 12, 24, 0.28);
 }
 
 .entry-right {
@@ -226,6 +239,7 @@ body::before {
   border-radius: 16px;
   background: var(--surface);
   border: 1px solid rgba(123, 164, 255, 0.2);
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
 }
 
 .about-page ul {
@@ -248,12 +262,19 @@ body::before {
   border: none;
   width: 36px;
   height: 36px;
-border-radius: 50%; 
+  border-radius: 50%;
   color: #fff;
   font-size: 1.1rem;
   cursor: pointer;
   background: linear-gradient(120deg, #4f66ca, #7b4fcf);
   box-shadow: 0 8px 16px rgba(79, 102, 202, 0.35);
+  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+
+.carousel-controls button:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 12px 22px rgba(79, 102, 202, 0.42);
+  filter: brightness(1.06);
 }
 
 .contact-section {
@@ -296,6 +317,7 @@ border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
   overflow: hidden;
+  animation: modalFadeIn 220ms ease-out both;
 }
 
 .modal-image {
@@ -303,7 +325,7 @@ border-radius: 50%;
   max-height: 88vh;
   border-radius: 14px;
   box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6);
-  animation: zoomIn 240ms ease-out;
+  animation: modalImageIn 260ms cubic-bezier(0.22, 1, 0.36, 1);
   position: relative;
   z-index: 1;
   cursor: default;
@@ -343,9 +365,46 @@ border-radius: 50%;
   right: max(1rem, calc(50vw - 580px));
 }
 
-@keyframes zoomIn {
-  from { opacity: 0; transform: scale(0.94); }
-  to { opacity: 1; transform: scale(1); }
+[data-aos] {
+  will-change: opacity, transform;
+}
+
+[data-aos='fade-up'],
+[data-aos='fade-left'],
+[data-aos='fade-right'],
+[data-aos='zoom-in'] {
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes pageEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalImageIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.965);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 @media (max-width: 960px) {
