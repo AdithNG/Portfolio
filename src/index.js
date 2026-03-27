@@ -20,8 +20,8 @@ root.render(
 reportWebVitals();
 
 AOS.init({
-  duration: 650,
+  duration: 900,
   easing: 'ease-out-cubic',
   once: true,
-  offset: 36,
+  offset: 80,
 });

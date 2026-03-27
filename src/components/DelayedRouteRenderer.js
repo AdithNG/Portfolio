@@ -24,12 +24,14 @@ function DelayedRouteRenderer({ location }) {
   }, [renderLocation]);
 
   return (
-    <Routes location={renderLocation}>
-      <Route path="/" element={<Home />} />
-      <Route path="/programming" element={<ProgrammingPortfolio />} />
-      <Route path="/games" element={<GamePortfolio />} />
-      <Route path="/about" element={<About />} />
-    </Routes>
+    <div className="route-shell" key={renderLocation.pathname}>
+      <Routes location={renderLocation}>
+        <Route path="/" element={<Home />} />
+        <Route path="/programming" element={<ProgrammingPortfolio />} />
+        <Route path="/games" element={<GamePortfolio />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </div>
   );
 }
 
