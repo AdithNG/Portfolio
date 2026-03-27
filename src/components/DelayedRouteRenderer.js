@@ -10,28 +10,22 @@ function DelayedRouteRenderer({ location }) {
   const [renderLocation, setRenderLocation] = useState(location);
 
   useEffect(() => {
-    setRenderLocation(location);
+    const timeout = setTimeout(() => {
+      setRenderLocation(location); // switch route
+      window.scrollTo(0, 0);        // then reset scroll
+      AOS.refreshHard();           // then re-init animations
+    }, 100); // small delay still applies
+
+    return () => clearTimeout(timeout);
   }, [location]);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-
-    const frame = window.requestAnimationFrame(() => {
-      AOS.refreshHard();
-    });
-
-    return () => window.cancelAnimationFrame(frame);
-  }, [renderLocation]);
-
   return (
-    <div className="route-shell" key={renderLocation.pathname}>
-      <Routes location={renderLocation}>
-        <Route path="/" element={<Home />} />
-        <Route path="/programming" element={<ProgrammingPortfolio />} />
-        <Route path="/games" element={<GamePortfolio />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </div>
+    <Routes location={renderLocation}>
+      <Route path="/" element={<Home />} />
+      <Route path="/programming" element={<ProgrammingPortfolio />} />
+      <Route path="/games" element={<GamePortfolio />} />
+      <Route path="/about" element={<About />} />
+    </Routes>
   );
 }
 

@@ -19,9 +19,4 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-AOS.init({
-  duration: 500,
-  easing: 'ease-out-cubic',
-  once: true,
-  offset: 48,
-});
+AOS.init();
